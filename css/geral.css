@@ -1,0 +1,141 @@
+[data-menu="button"] {
+    display: none;
+}
+
+[data-semana]::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+[data-semana].aberto:after {
+    background-color: #3f4;
+}
+
+.copyright {
+    background-color: #1B1D20;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat';
+    padding: 20px 0 20px;
+}
+
+#momento {
+    color: #fff;
+    font-family: 'Montserrat';
+    margin-top: 20px;
+}
+
+.excluir {
+    display: none;
+}
+
+#mensagem-enviada {
+    color: green;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    display: none;
+    margin-top: 120px;
+}
+
+#mensagem-enviada.abriMensagem {
+    display: block;
+}
+
+@keyframes show-top {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+.js-scroll {
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(-30px, 0, 0);
+}
+
+.js-scroll.animar-scroll {
+    opacity: 1;
+    transition: .3s;
+    transform: translate3d(0, 0, 0); 
+}
+
+@media (max-width: 739px) {
+    [data-menu="button"] {
+        display: flex;
+        background-color: #222;
+        border: none;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        margin: 10px;
+        align-items: center;
+        z-index: 300;
+        position: relative;
+        top: 25px;
+        margin-left: 40px;
+    }
+    [data-menu="button"]::before {
+        margin-right: 4px;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background-color: white;
+        box-shadow:  0 4px #fff, 0 -4px #fff;
+        transition: tranform .3s;
+    }
+    [data-menu="button"].active:before {
+        transform: rotate(90deg);
+    }
+    #menu {
+        display: none;
+    }
+    #menu.active {
+        display: block;
+        animation: show-top .3s forwards;
+    }
+    #header-menu ul {
+        margin-top: 12px;
+        background-color: rgb(2, 255, 137, .9);
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
+        position: absolute;
+        width: 140px;
+    }
+    #header-menu ul li {
+        float: none;
+        margin-top: 10px;
+    }
+    #header-menu ul li a {
+        text-align: center;
+    }
+    #header-menu ul li a:hover {
+        transform: scale(1);
+        transition: .3s;
+        background-color: transparent;
+    }
+    #momento {
+        margin-bottom: 40px;
+    }
+
+    #mensagem-enviada {
+        margin-top: 60px;
+    }
+    .copyright {
+        margin-top: 60px;
+    }
+}

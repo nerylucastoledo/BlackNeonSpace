@@ -1,0 +1,89 @@
+.atendimento {
+    padding: 60px 0;
+}
+
+.subtitulo-atendimento {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+.subtitulo-atendimento::before {
+    content: "";
+    width: 10px;
+    height: 30px;
+    display: block;
+    background-color: #00FF00;
+    margin: 0 10px 0 0;
+    letter-spacing: .1em;
+    float: left;
+}
+
+.atendimento p {
+    color: #a9a9a9;
+    margin: 20px 0 40px 0;
+    font-family: 'Montserrat';
+    font-size: 0.875em;
+}
+
+.atendimento input, textarea {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    color: #a9a9a9;
+    border-radius: 5px;
+    border-color: #00FF00;
+    box-sizing: border-box;
+}
+
+.atendimento textarea {
+    height: 100px;
+}
+
+.atendimento table {
+    color: #a9a9a9;
+    border: 1px solid #fff;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-size: 0.875em;
+    text-align: center;
+}
+
+.atendimento th {
+    color: #fff;
+}
+
+.atendimento th,td {
+    padding: 15px 10px;
+}
+
+.atendimento table, th, td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+
+.mapa {
+    background-color: #1B1D20;
+    padding-bottom: 60px;
+}
+
+.mapa p {
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-bottom: 60px;
+}
+
+.mapa img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@media (max-width: 739px) {
+    table {
+        margin-bottom: 40px;
+    }
+}

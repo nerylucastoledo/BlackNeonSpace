@@ -1,0 +1,99 @@
+.introducao-sobre {
+    background-image: url("../img/sobre.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 98px;
+}
+
+.introducao-sobre p {
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: .1em;
+    font-family: 'Montserrat';
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.quem-somos {
+    padding-bottom: 60px;
+}
+
+.quem-somos p {
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat';
+    letter-spacing: .1em;
+    line-height: 25px;
+    font-size: 1em;
+}
+
+#mensagem-clintes {
+    color: #fff;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: bold;
+}
+
+.box-clientes {
+    padding-bottom: 60px;
+    background-color: #1B1D20;
+}
+
+.box-img img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #00FF00;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.box-texto {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 100px;
+    text-align: center;
+    color: #666;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin: 0 auto 30px;
+}
+
+.box-texto p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #FFF;
+    position: relative;
+    bottom: -62px;
+    left: -60px;
+    right: 0;
+}
+
+.box-mensagen span {
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 739px) {
+
+    .box-texto {
+        margin-top: 40px;
+    }
+
+    header {
+        position: relative;
+    }
+    .introducao-sobre {
+        padding-top: 0px;
+    }
+}

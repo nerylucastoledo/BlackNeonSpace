@@ -1,0 +1,233 @@
+/* GERAL */
+body {
+    background-color: #000;
+} 
+.subtitulo {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    text-align: center;
+    margin: 60px 0;
+}
+.subtitulo:after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    display: block;
+    background-color:#00FF00;
+    margin: 10px auto;
+    letter-spacing: .1em;
+}
+.introducao {
+    background-image: url("../img/intro.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 98px;
+}
+.introducao p {
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: .1em;
+    font-family: 'Montserrat';
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+/* FIM */
+
+header {
+    height: 100px;
+    background-color: rgb(2, 255, 137);
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+}
+
+
+#logo {
+    width: 150px;
+    height: 100px;
+}
+#header-menu ul li {
+    float: right;
+    margin-top: 33px;
+}
+#header-menu ul li a {
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: .1em;
+    border-radius: 5px;
+}
+#header-menu ul li a:hover {
+    transform: scale(1.2);
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.borda-branca {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+.borda-branca:first-child {
+    color: #000;
+}
+.borda-branca::after, .borda-branca::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.espaco img {
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.espaco h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    margin-bottom: 20px;
+}
+.espaco h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px auto 0 auto;
+}
+.espaco p {
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat';
+    letter-spacing: .1em;
+    line-height: 25px;
+    font-weight: bold;
+}
+.pra-jogar {
+    padding: 1px 0 60px 0;
+    background-color: #1B1D20;
+}
+.config-pc {
+    color: #fff;
+    text-align: center;
+}
+.config-pc p {
+    border: 1px solid rgb(8, 240, 39);
+    font-size: 1.2em;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+.config-pc p:hover {
+    border: 1px solid #fff;    
+}
+#computador {
+    display: block;
+    height: 300px;
+    margin: 0 auto 60px auto;
+}
+#computador:hover {
+    transition: .3s;
+    transform: scale(1.2);
+}
+.config-pc h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+#botao {
+    border: none;
+    border-radius: 5px;
+    background-color: #00FF00;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 20px 0 0 0;
+    padding: 10px 20px;
+}
+#botao:hover {
+    transition: .3s;
+    transform: scale(1.2);
+}
+.quebra {
+    background-image: url("../img/Gamers.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px;
+    font-family: 'Montserrat';
+    color: #fff;
+    text-align: center;
+}
+.quebra p {
+    font-size: 2em;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 40px;
+    font-style: italic;
+}
+.quebra cite {
+    display: block;
+    margin-top: 20px;
+}
+
+footer {
+    padding-top: 60px;
+    text-align: center;
+}
+footer img {
+    width: 250px;
+}
+
+footer h2 {
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+footer li a {
+    color: #fff;
+    display: block;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-family: 'Montserrat'
+}
+
+footer a {
+    font-size: 2em;
+}
+
+footer i {
+    color: #fff;
+    display: block;
+    margin: 20px auto 0 10px;
+}
+
+@media (max-width: 739px) {
+    footer h2 {
+        margin-top: 40px;
+    }
+    .espaco h2 {
+        margin-top: 20px;
+    }
+    header {
+        position: relative;
+    }
+    .introducao {
+        padding-top: 0px;
+    }
+}
