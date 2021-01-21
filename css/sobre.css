@@ -66,15 +66,17 @@
 
 .box-texto p::after {
     content: "";
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #FFF;
-    position: relative;
-    bottom: -62px;
-    left: -60px;
-    right: 0;
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #FFF;
+	position: absolute;
+	bottom: 150px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .box-mensagen span {
